@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <img class="logo" id="btnAdd" src="images/menu.png" alt="menu">
+        <div class="nav_body">
+            <img id="btnClose" src="images/close.png" class="logo" alt="">
+            <ul>
+                <li>Home</li>
+                <li>Blogs</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iste officiis asperiores consequuntur
+            voluptates. Accusamus, nobis unde iste distinctio totam adipisci repellendus vitae deleniti, sapiente minima
+            quae consectetur placeat necessitatibus sint alias commodi cum ratione facere doloremque at similique
+            architecto qui assumenda impedit. Mollitia, dicta. Voluptate quae earum doloremque voluptas vero,
+            perferendis at molestias harum neque perspiciatis id ipsa ex, dolorem maxime alias debitis quasi tenetur
+            eius libero architecto delectus voluptates. Voluptatibus veritatis quas suscipit nobis distinctio, sit
+            tempora aliquam ipsam magni perspiciatis ipsa. Sit voluptates modi qui, fugiat neque quaerat id vitae
+            impedit perspiciatis nulla ad, doloribus praesentium magnam.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iste officiis asperiores consequuntur
+            voluptates. Accusamus, nobis unde iste distinctio totam adipisci repellendus vitae deleniti, sapiente minima
+            quae consectetur placeat necessitatibus sint alias commodi cum ratione facere doloremque at similique
+            architecto qui assumenda impedit. Mollitia, dicta. Voluptate quae earum doloremque voluptas vero,
+            perferendis at molestias harum neque perspiciatis id ipsa ex, dolorem maxime alias debitis quasi tenetur
+            eius libero architecto delectus voluptates. Voluptatibus veritatis quas suscipit nobis distinctio, sit
+            tempora aliquam ipsam magni perspiciatis ipsa. Sit voluptates modi qui, fugiat neque quaerat id vitae
+            impedit perspiciatis nulla ad, doloribus praesentium magnam.
+        </p>
+    </main>
+
+</body>
+
+</html>
+
+<script>
+    const navBody = document.querySelector('.nav_body');
+    const btnAdd = document.getElementById('btnAdd');
+    const btnClose = document.getElementById('btnClose');
+
+    btnAdd.addEventListener('click', () => {
+        navBody.classList.add('animation');
+    })
+
+    btnClose.addEventListener('click', () => {
+        navBody.classList.remove('animation');
+    })
+</script>
